@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		51C9D35424527A2400093086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9D35324527A2400093086 /* AppDelegate.swift */; };
 		51C9D35624527A2400093086 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9D35524527A2400093086 /* SceneDelegate.swift */; };
-		51C9D35824527A2400093086 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9D35724527A2400093086 /* ViewController.swift */; };
+		51C9D35824527A2400093086 /* StarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9D35724527A2400093086 /* StarsViewController.swift */; };
 		51C9D35B24527A2400093086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C9D35924527A2400093086 /* Main.storyboard */; };
 		51C9D35D24527A2600093086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51C9D35C24527A2600093086 /* Assets.xcassets */; };
 		51C9D36024527A2600093086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C9D35E24527A2600093086 /* LaunchScreen.storyboard */; };
+		51C9D3682452835B00093086 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9D3672452835B00093086 /* Star.swift */; };
+		51C9D36B245284A700093086 /* StarsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9D36A245284A700093086 /* StarsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		51C9D35024527A2400093086 /* Starsw (iOSPT6).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Starsw (iOSPT6).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C9D35324527A2400093086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51C9D35524527A2400093086 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		51C9D35724527A2400093086 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		51C9D35724527A2400093086 /* StarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsViewController.swift; sourceTree = "<group>"; };
 		51C9D35A24527A2400093086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51C9D35C24527A2600093086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51C9D35F24527A2600093086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51C9D36124527A2600093086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51C9D3672452835B00093086 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		51C9D36A245284A700093086 /* StarsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,31 @@
 			children = (
 				51C9D35324527A2400093086 /* AppDelegate.swift */,
 				51C9D35524527A2400093086 /* SceneDelegate.swift */,
-				51C9D35724527A2400093086 /* ViewController.swift */,
+				51C9D35724527A2400093086 /* StarsViewController.swift */,
 				51C9D35924527A2400093086 /* Main.storyboard */,
 				51C9D35C24527A2600093086 /* Assets.xcassets */,
 				51C9D35E24527A2600093086 /* LaunchScreen.storyboard */,
 				51C9D36124527A2600093086 /* Info.plist */,
+				51C9D3692452847900093086 /* Model */,
+				51C9D36C245284AF00093086 /* Model Controller */,
 			);
 			path = "Starsw (iOSPT6)";
+			sourceTree = "<group>";
+		};
+		51C9D3692452847900093086 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				51C9D3672452835B00093086 /* Star.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		51C9D36C245284AF00093086 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				51C9D36A245284A700093086 /* StarsController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51C9D35824527A2400093086 /* ViewController.swift in Sources */,
+				51C9D35824527A2400093086 /* StarsViewController.swift in Sources */,
 				51C9D35424527A2400093086 /* AppDelegate.swift in Sources */,
 				51C9D35624527A2400093086 /* SceneDelegate.swift in Sources */,
+				51C9D3682452835B00093086 /* Star.swift in Sources */,
+				51C9D36B245284A700093086 /* StarsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
